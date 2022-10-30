@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.c59cc657.css",
-    "main.js": "/static/js/main.ec753dec.js",
-    "index.html": "/index.html",
-    "main.c59cc657.css.map": "/static/css/main.c59cc657.css.map",
-    "main.ec753dec.js.map": "/static/js/main.ec753dec.js.map"
+    "main.css": "/canciones-react-localstorage/static/css/main.c59cc657.css",
+    "main.js": "/canciones-react-localstorage/static/js/main.ec753dec.js",
+    "index.html": "/canciones-react-localstorage/index.html",
+    "main.c59cc657.css.map": "/canciones-react-localstorage/static/css/main.c59cc657.css.map",
+    "main.ec753dec.js.map": "/canciones-react-localstorage/static/js/main.ec753dec.js.map"
   },
   "entrypoints": [
     "static/css/main.c59cc657.css",
