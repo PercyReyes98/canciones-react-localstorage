@@ -4,14 +4,17 @@ const ControlDeVisibilidad = ({setShowCompleted, eliminarCancion, inChecked}) =>
         eliminarCancion()
     }
     return(
-        <div>
+        <div className="d-flex justify-content-between bg-secondary text-white text-center p-2 border-secondary">
+        <div className="form-check form-switch">
         <input
+        className="form-check-input"
           type="checkbox"
           checked={inChecked}
           onChange={(e) => setShowCompleted(e.target.checked)}
         ></input>{" "}
         <label>Mostrar canciones de PXNDX</label>
-        <button onClick={handleEliminar}>Borrar</button>
+        </div>
+        <button className="btn btn-danger btn-sm" onClick={handleEliminar}>Borrar</button>
       </div>
     )
 }

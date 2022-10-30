@@ -10,9 +10,9 @@ import CancionFila from "./CancionFila"
         
     }
     return ( 
-    <table>
+    <table className="table table-dark table-striped table-bordered border-secondary">
         <thead>
-          <tr>
+          <tr className="table-primary">
             <th>Repositorio de Canciones</th>
           </tr>
         </thead>

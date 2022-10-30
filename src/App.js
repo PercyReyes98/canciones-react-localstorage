@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import CrearCancion from "./components/CrearCancion";
 import ListarCanciones from "./components/ListarCanciones";
 import ControlDeVisibilidad from "./components/ControlDeVisibilidad";
+import Container from './components/Container'
 function App() {
   const [lista, setLista] = useState([]);
   const [showCompleted, setShowCompleted] = useState(false);
@@ -32,8 +33,9 @@ function App() {
     setShowCompleted(false)
   }
   return (
-    <div className="App">
-      <CrearCancion crearNuevaCancion={crearNuevaCancion}></CrearCancion>
+    <main className="bg-dark vh-100 text-white">
+     <Container>
+     <CrearCancion crearNuevaCancion={crearNuevaCancion}></CrearCancion>
       <ListarCanciones
         canciones={lista}
         alternarCancion={alternarCancion}
@@ -45,8 +47,9 @@ function App() {
           alternarCancion={alternarCancion}
           showCompleted={showCompleted}
         ></ListarCanciones>
-      )}
-    </div>
+      )}  
+     </Container>
+    </main>
   );
 }
 

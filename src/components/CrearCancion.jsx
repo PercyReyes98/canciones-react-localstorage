@@ -9,14 +9,18 @@ const CrearCancion = ({ crearNuevaCancion }) => {
     setCaptura("");
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="my-2 row">
+      <div className="col-9">
       <input
         value={captura}
         type="text"
         placeholder="Ingrese una cancion"
         onChange={(e) => setCaptura(e.target.value)}
-      ></input>
-      <button>guardar</button>
+         className="form-control"></input>
+      </div>
+      <div className="col-3">
+      <button className="btn btn-primary btn-sm">Guardar</button>
+      </div>
     </form>
   );
 };
